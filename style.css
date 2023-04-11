@@ -1,0 +1,115 @@
+body {
+	background: #b1c2da;
+	color: #444;
+	font: normal 65% Tahoma, sans-serif;
+}
+
+.mybutton {
+	font-family: "Lucida Sans Unicode", sans-serif;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	/* Keine Unterstreichung */
+	border-radius: 4px;
+	/* Abrundung der Ecken */
+	cursor: pointer;
+	/* Zeiger bei Hover-Effekt */
+}
+
+h1 {
+	font: normal 2.5em Tahoma, sans-serif;
+}
+
+.clearer {
+	clear: both;
+}
+
+.left {
+	float: left;
+}
+
+.container {
+	background: #FFF;
+	font-size: 1.3em;
+	margin: 0 auto;
+	padding: 0 10px 10px;
+	width: 800px;
+}
+
+.top {
+	padding: 50px 10px 0;
+}
+
+.header {
+	background: #FFF;
+	font-size: 1.2em;
+	height: 150px;
+	margin: 0 auto;
+	padding: 10px 10px 5px;
+	width: 800px;
+}
+
+.header .left {
+	background: #D9E1E5;
+	font: normal 3.5em "Trebuchet MS", sans-serif;
+	line-height: 150px;
+	text-align: center;
+	width: 800px;
+}
+
+.navigation {
+	background: #D9E1E5;
+	border: 1px solid #DFEEF7;
+	border-color: #DFEEF7 #CFDEE7;
+	height: 41px;
+}
+
+.navigation a {
+	background: #D9E1E5;
+	border-right: 1px solid #AFBEC7;
+	color: #456;
+	display: block;
+	float: left;
+	font: bold 1.1em sans-serif;
+	line-height: 41px;
+	padding: 0 20px;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	color: black;
+}
+
+.main {
+	border-top: 10px solid #FFF;
+}
+
+.content {
+	text-align: justify;
+	padding: 0 20px 20px;
+	width: 760px;
+}
+
+.code-showcace {
+	font-size: 1.3em;
+	background: #1E1E1E;
+	color: white;
+}
+
+.content p {
+	font-family: "Lucida Sans Unicode", sans-serif;
+}
+
+.content ul {
+	font-family: "Lucida Sans Unicode", sans-serif;
+	line-height: 1.5;
+}
+
+td {
+	height: 100px;
+	width: 100px;
+	border: 1px solid black;
+	text-align: center;
+	font-size: 72px;
+	cursor: pointer;
+}

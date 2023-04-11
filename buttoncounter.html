@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Greatest Website of all Time</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="top">
+    <div class="header">
+      <div class="left">Greatest Website of all Time!</div>
+      <div class="right"></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="navigation">
+      <a href="index.html">Home</a>
+      <a href="buttoncounter.html">Button Counter</a>
+      <a href="calculator.html">Taschenrechner</a>
+      <a href="passwordgenerator.html">Passwort Generator</a>
+      <a href="tictactoe.html">Tic-Tac-Toe</a>
+      <a href="wecker.html">Wecker</a>
+      <div class="clearer">
+        <span></span>
+      </div>
+    </div>
+    <div class="main">
+      <div class="content">
+        <h1>Button Counter</h1>
+        <p>
+          Wenn du auf den Button unten klickst erhöht sich ein Zähler. Außerdem kannst Du
+          den Zähler wieder zurücksetzen. Probier es einfach mal aus!
+        </p>
+        <button class="mybutton" onclick="increaseCount()">Klick mich</button>
+        <button class="mybutton" onclick="resetCount()">Zähler zurücksetzen</button><br>
+        <p id="counter">Zähler: 0</p>
+        <h1>Erklärung</h1>
+        <p>
+          Wir verwenden eine Zählervariable "count", sowie zwei
+          verschiedene Funktionen. Die eine erhöht einfach den Zähler, sobald der Button
+          angeklickt wird, und die andere setzt den Zähler wieder auf 0 zurück.
+        <div class="code-showcace">
+          <pre>
+                <code>
+    let count = 0;
+    
+    function increaseCount() {
+        count++;
+        document.getElementById("counter").innerHTML = "Zähler: " + count;
+    }
+                        
+    function resetCount() {
+        count = 0;
+        document.getElementById("counter").innerHTML = "Zähler: " + count;
+    }
+                </code>
+            </pre>
+        </div>
+        </p>
+      </div>
+      <div class="clearer"><span></span></div>
+    </div>
+  </div>
+</body>
+
+</html>

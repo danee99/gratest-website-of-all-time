@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Greatest Website of all Time</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="top">
+        <div class="header">
+            <div class="left">Greatest Website of all Time!</div>
+            <div class="right"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="buttoncounter.html">Button Counter</a>
+            <a href="calculator.html">Taschenrechner</a>
+            <a href="passwordgenerator.html">Passwort Generator</a>
+            <a href="tictactoe.html">Tic-Tac-Toe</a>
+            <a href="wecker.html">Wecker</a>
+            <div class="clearer">
+                <span></span>
+            </div>
+        </div>
+        <div class="main">
+            <div class="content">
+                <h1>Tic Tac Toe</h1>
+                <ul>
+                    <li>Es gibt zwei Spieler, X und O, die abwechselnd ein Feld markieren.</li>
+                    <li>Das Spiel endet, wenn ein Spieler eine vollständige Reihe, Spalte oder Diagonale mit seinen
+                        Markierungen füllt.</li>
+                    <li>Wenn alle Felder markiert wurden, aber kein Spieler gewonnen hat, ist es ein Unentschieden.</li>
+                </ul>
+                <br>
+
+                <table>
+                    <tr>
+                        <td id="cell-0" onclick="makeMove(0)"></td>
+                        <td id="cell-1" onclick="makeMove(1)"></td>
+                        <td id="cell-2" onclick="makeMove(2)"></td>
+                    </tr>
+                    <tr>
+                        <td id="cell-3" onclick="makeMove(3)"></td>
+                        <td id="cell-4" onclick="makeMove(4)"></td>
+                        <td id="cell-5" onclick="makeMove(5)"></td>
+                    </tr>
+                    <tr>
+                        <td id="cell-6" onclick="makeMove(6)"></td>
+                        <td id="cell-7" onclick="makeMove(7)"></td>
+                        <td id="cell-8" onclick="makeMove(8)"></td>
+                    </tr>
+                </table>
+                <h2>Spiel Status:</h2>
+                <p id="game-status">Spiel hat begonnen.</p>
+                <button class="mybutton" onclick="resetBoard()">Reset Game</button>
+            </div>
+        </div>
+        </div>
+        <div class="clearer"><span></span></div>
+    </div>
+    </div>
+</body>
+
+</html>

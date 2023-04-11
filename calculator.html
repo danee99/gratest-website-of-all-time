@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Greatest Website of all Time</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="top">
+    <div class="header">
+      <div class="left">Greatest Website of all Time!</div>
+      <div class="right"></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="navigation">
+      <a href="index.html">Home</a>
+      <a href="buttoncounter.html">Button Counter</a>
+      <a href="calculator.html">Taschenrechner</a>
+      <a href="passwordgenerator.html">Passwort Generator</a>
+      <a href="tictactoe.html">Tic-Tac-Toe</a>
+      <a href="wecker.html">Wecker</a>
+      <div class="clearer">
+        <span></span>
+      </div>
+    </div>
+    <div class="main">
+      <div class="content">
+        <h1>Taschenrechner</h1>
+        <p>
+          Hier siehst du einen einfachen Taschenrechner. Probier ihn einfach
+          mal aus.
+        </p>
+        <input type="text" id="calculator-result" readonly />
+        <input type="button" value="0" onclick="addToInput('0')" />
+        <input type="button" value="1" onclick="addToInput('1')" />
+        <input type="button" value="2" onclick="addToInput('2')" />
+        <input type="button" value="3" onclick="addToInput('3')" />
+        <input type="button" value="4" onclick="addToInput('4')" />
+        <input type="button" value="5" onclick="addToInput('5')" />
+        <input type="button" value="6" onclick="addToInput('6')" />
+        <input type="button" value="7" onclick="addToInput('7')" />
+        <input type="button" value="8" onclick="addToInput('8')" />
+        <input type="button" value="9" onclick="addToInput('9')" />
+        <input type="button" value="+" onclick="addToInput('+')" />
+        <input type="button" value="-" onclick="addToInput('-')" />
+        <input type="button" value="*" onclick="addToInput('*')" />
+        <input type="button" value="/" onclick="addToInput('/')" />
+        <input type="button" value="C" onclick="clearInput()" />
+        <input type="button" value="=" onclick="calculate()" />
+
+        <h1>Erklärung</h1>
+        <p>
+          Der Taschenrechner besteht aus einem Textfeld, das auf "readonly"
+          gesetzt ist. Hier werden sowohl die Benutzereingaben als auch das
+          Endergebnis stehen. Dann gibt es verschiedene Buttons. Zum einen für
+          die Zahlen von 0 bis 9 und zum anderen für die Rechen Operatoren
+          (d.h. Plus, Minus, etc.). Und schließlich gibt es zwei Buttons,
+          einmal zum Zurücksetzen der Eingabe ("C") und zum Berechnen der
+          Eingabe ("="). Die JavaScript-Funktionen sehen wie folgt aus.
+          Wir verwenden hier die <b>eval()</b>-Funktion, die einen String
+          (z.B: "2*3+4") berechnen kann, also sehr praktisch.
+        <div class="code-showcace">
+          <pre>
+                    <code>
+    function addToInput(x){
+        document.getElementById("calculator-result").value += x;
+    }
+    
+    function clearInput(){
+        document.getElementById("calculator-result").value = "";
+    }
+    
+    function calculate(){
+        document.getElementById("calculator-result").value 
+        = eval(document.getElementById("calculator-result").value);
+    } 
+                    </code>
+                </pre>
+        </div>
+        </p>
+      </div>
+      <div class="clearer"><span></span></div>
+    </div>
+  </div>
+</body>
+
+</html>
